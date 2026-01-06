@@ -18,10 +18,12 @@ fun TaskItemScreen() {
 var isCompleted by remember {
         mutableStateOf(false)
     }
+
+
     Column(modifier = Modifier.padding(16.dp)) {
 
         Text(
-            text = "Submit Final Project",
+            text = "Final Project",
             style = MaterialTheme.typography.titleLarge
         )
 
@@ -47,4 +49,6 @@ var isCompleted by remember {
 @Composable
 fun TaskItemPreview() {
     // TODO: Call TaskItemScreen
+     TaskItemScreen()
+    
 }
